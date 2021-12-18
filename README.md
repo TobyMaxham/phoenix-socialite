@@ -6,12 +6,9 @@
 
 ---
 
-## Important note
+This package can be used to add a Laravel Socialite driver using the PhoenixII OAuth2-API.
 
-This package is not developed or supported by PhoenixII (it4sport). This package is a helper for laravel using 
-the public documentation. I will try to keep this package up to date.
-
-If you do not have a laravel installation, please check out my other package.
+If you do not have a laravel installation, please check out my other package which can be used without a framework:
 https://github.com/TobyMaxham/phoenixii-oauth2
 
 ## Installation
@@ -59,6 +56,11 @@ return Socialite::driver('phoenix-auth')->redirect();
 - ``licenses``
 - ``functions``
 - ``addresses``
+
+## Important note
+
+This package is not developed or maintained by PhoenixII (it4sport). This package was created using
+the public [OAuth-Documentation](https://tricept.atlassian.net/wiki/spaces/PIIWIKI/pages/976912387/OAuth+2+-+Schnittstelle).
 
 ## Testing
 
