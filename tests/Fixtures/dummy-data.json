@@ -1,0 +1,37 @@
+{
+    "id": "8366eb42-ddac-49f9-b0e4-e25164d782d3",
+    "user": {
+        "id": "8366eb42-ddac-49f9-b0e4-e25164d782d3",
+        "firstname": "Max",
+        "lastname": "Mustermann",
+        "birthday": "1987-01-01 00:00:00.000",
+        "email": "max@mustermann.de"
+    },
+    "organisation": {
+        "id": "1",
+        "full_name": "Tricept Verband Württemberg",
+        "short_name": "Tricept AG",
+        "internal_name": "bowb"
+    },
+    "licenses": [
+        {
+            "license_number_dosb": "",
+            "license_number_organisation": "1231 Lizenz Nr.",
+            "license_number_organisation_sf": "567567 WLSB",
+            "first_issue_date": "2019-06-03 00:00:00.000",
+            "issue_date": "2019-06-19 00:00:00.000",
+            "valid_until": "2020-06-30 00:00:00.000",
+            "training_course": "SR-Lizenz",
+            "training_course_short": "SRL"
+        }
+    ],
+    "functions": [
+        {
+            "id": "96fc343d-01ea-41a9-aca0-9f87f7c9d29f",
+            "function_since": "2019-06-27 00:00:00.000",
+            "function_id": "a1f60eb6-3c11-4a22-84b7-8fe47633194c",
+            "function_name_male": "Lizenzinhaber",
+            "function_name_female": "Lizenzinhaberin"
+        }
+    ]
+}
