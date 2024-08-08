@@ -20,8 +20,7 @@ class PhoenixOAuthClientTest extends TestCase
         m::close();
     }
 
-    /** @test */
-    public function it_returns_a_user_instance_for_the_auth_request()
+    public function test_it_returns_a_user_instance_for_the_auth_request()
     {
         $request = Request::create('foo', 'GET', ['state' => str_repeat('A', 40), 'code' => 'code']);
         $request->setLaravelSession($session = m::mock(Session::class));
@@ -42,8 +41,7 @@ class PhoenixOAuthClientTest extends TestCase
         $this->assertSame($user->id, $provider->user()->id);
     }
 
-    /** @test */
-    public function it_throws_an_invalid_state_exception()
+    public function test_it_throws_an_invalid_state_exception()
     {
         $this->expectException(InvalidStateException::class);
 
@@ -54,8 +52,7 @@ class PhoenixOAuthClientTest extends TestCase
         $provider->user();
     }
 
-    /** @test */
-    public function it_throws_an_exception_when_state_is_not_set()
+    public function test_it_throws_an_exception_when_state_is_not_set()
     {
         $this->expectException(InvalidStateException::class);
 
