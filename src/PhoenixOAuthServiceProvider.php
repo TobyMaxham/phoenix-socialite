@@ -9,7 +9,7 @@ class PhoenixOAuthServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $socialite = $this->app->make('Laravel\Socialite\Contracts\Factory');
+        $socialite = $this->app->make(\Laravel\Socialite\Contracts\Factory::class);
         $socialite->extend(
             'phoenix-auth',
             function ($app) use ($socialite) {

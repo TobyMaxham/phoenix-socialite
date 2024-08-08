@@ -8,7 +8,7 @@ use Laravel\Socialite\Two\User;
 
 class PhoenixOAuthProvider extends AbstractProvider implements ProviderInterface
 {
-    public static $PHOENIX_INSTANCE = null;
+    public static $PHOENIX_INSTANCE;
 
     protected function getAuthUrl($state)
     {
