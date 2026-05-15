@@ -1,15 +1,24 @@
 <?php
 
+declare(strict_types=1);
+
 namespace TobyMaxham\PhoenixSocialite;
 
+use Throwable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Socialite\Contracts\Factory;
+use Illuminate\Contracts\Container\BindingResolutionException;
 
 class PhoenixOAuthServiceProvider extends ServiceProvider
 {
-    public function boot()
+    /**
+     * @throws BindingResolutionException
+     * @throws Throwable
+     */
+    public function boot(): void
     {
-        $socialite = $this->app->make(\Laravel\Socialite\Contracts\Factory::class);
+        $socialite = $this->app->make(Factory::class);
         $socialite->extend(
             'phoenix-auth',
             function ($app) use ($socialite) {

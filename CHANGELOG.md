@@ -2,6 +2,10 @@
 
 All notable changes to `phoenix-oauth` will be documented in this file.
 
+## 4.0 - 2026-05-15
+
+- Update to Laravel 13 and PHP 8.4
+
 ## 3.0 - 2024-08-08
 
 - Update to Laravel 11 and PHP 8.2
